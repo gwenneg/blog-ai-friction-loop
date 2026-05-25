@@ -7,9 +7,9 @@
 # denied tool calls) and writes one markdown file per event to .claude/friction/{session-id}/.
 #
 # Those files are later processed by /update-context-docs to propose doc improvements.
-# Enable with FRICTION_CAPTURE=1 in .claude/settings.local.json.
+# Disable with FRICTION_CAPTURE=0 in .claude/settings.local.json.
 
-if [ "$FRICTION_CAPTURE" != "1" ]; then
+if [ "${FRICTION_CAPTURE:-1}" != "1" ]; then
   exit 0
 fi
 

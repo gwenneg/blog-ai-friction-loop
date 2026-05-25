@@ -22,7 +22,7 @@ Check for toolkit updates:
 1. Read `.claude/.friction-capture-version`.
 2. Fetch the latest release tag:
    ```bash
-   curl -fsSL https://api.github.com/repos/gwenneg/blog-friction-driven-feedback-loop-for-ai-context-docs/releases/latest \
+   curl -fsSL https://api.github.com/repos/gwenneg/blog-ai-friction-loop/releases/latest \
      | jq -r '.tag_name'
    ```
 3. Compare as semver (strip leading `v` before comparing). If the remote tag is newer, use `AskUserQuestion` to offer updating:
