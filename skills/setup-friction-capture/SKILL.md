@@ -33,14 +33,13 @@ bash .claude/scripts/install-friction-capture.sh
 Otherwise, bootstrap by downloading the update script first, then run it:
 
 ```bash
-mkdir -p .claude/scripts .claude/skills/update-context-docs
-
 TAG=$(curl -fsSL https://api.github.com/repos/gwenneg/blog-ai-friction-loop/releases/latest | jq -r '.tag_name')
 if [[ -z "$TAG" || "$TAG" == "null" ]]; then
   echo "Error: could not fetch latest release tag." >&2
   exit 1
 fi
 
+mkdir -p .claude/scripts
 curl -fsSL "https://raw.githubusercontent.com/gwenneg/blog-ai-friction-loop/${TAG}/skills/setup-friction-capture/scripts/install-friction-capture.sh" \
   -o .claude/scripts/install-friction-capture.sh
 chmod +x .claude/scripts/install-friction-capture.sh

@@ -5,10 +5,10 @@
 # Shared Claude Code settings (hooks, permissions). Do NOT commit settings.local.json.
 !/.claude/settings.json
 
-# The capture script run by the SessionEnd hook.
+# Hook scripts run by SessionStart and SessionEnd (e.g. friction-reminder.sh, friction-capture.sh).
 !/.claude/scripts/
 
-# Skills installed locally (e.g. /update-context-docs).
+# Skills installed locally (e.g. /disable-friction-capture, /update-context-docs).
 !/.claude/skills/
 
 # Tracks which version of the friction capture toolkit is installed.
