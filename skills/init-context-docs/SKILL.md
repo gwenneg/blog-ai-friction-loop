@@ -35,11 +35,11 @@ Output the following text verbatim to the user before taking any other action:
 > - [Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — Anthropic
 > - [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) — Anthropic
 > - [AGENTS.md open standard](https://agents.md/) — Linux Foundation
-> - [Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?](https://arxiv.org/abs/2602.11988) — Gloaguen et al. (ETH Zurich), arXiv preprint, 2026
-> - ✅ [Lost in the Middle](https://arxiv.org/abs/2307.03172) — Liu et al. (Stanford), TACL 2024
-> - ✅ [Context Length Alone Hurts LLM Performance Despite Perfect Retrieval](https://arxiv.org/abs/2510.05381) — Du et al., EMNLP Findings 2025
-> - ✅ [On the Emergence of Position Bias in Transformers](https://arxiv.org/abs/2502.01951) — Wu et al. (MIT), ICML 2025
-> - [On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents](https://arxiv.org/abs/2601.20404) — Lulla et al. (Heidelberg, Bamberg, Singapore Management University), arXiv preprint, 2026
+> - [Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?](https://arxiv.org/pdf/2602.11988) — Gloaguen et al. (ETH Zurich), arXiv preprint, 2026
+> - ✅ [Lost in the Middle](https://arxiv.org/pdf/2307.03172) — Liu et al. (Stanford), TACL 2024
+> - ✅ [Context Length Alone Hurts LLM Performance Despite Perfect Retrieval](https://arxiv.org/pdf/2510.05381) — Du et al., EMNLP Findings 2025
+> - ✅ [On the Emergence of Position Bias in Transformers](https://arxiv.org/pdf/2502.01951) — Wu et al. (MIT), ICML 2025
+> - [On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents](https://arxiv.org/pdf/2601.20404) — Lulla et al. (Heidelberg, Bamberg, Singapore Management University), arXiv preprint, 2026
 >
 > **Key finding:** Two complementary studies point to the same conclusion: well-formed, minimal context files are associated with ~29% lower agent runtime and ~17% fewer output tokens (Lulla et al.), while files with unnecessary content actively reduce task success rates compared to no context at all (Gloaguen et al.). Every line added to these files should pass a strict necessity test: *"Would removing this cause an agent to make a mistake?"* If not, leave it out. The goal of this skill is the smallest set of high-signal content — not the most comprehensive documentation.
 
