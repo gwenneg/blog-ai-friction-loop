@@ -5,7 +5,7 @@ Used by both generation agents (to know what good looks like before writing) and
 ## Hard Constraints
 
 - [ ] Present at repo root as `AGENTS.md`
-- [ ] Under 500 lines — if over, move domain-specific content into `docs/*-guidelines.md` files; the 500-line limit is a ceiling, not a target
+- [ ] Under 200 lines — if over, move domain-specific content into `docs/*-guidelines.md` files; the 200-line limit is a ceiling, not a target
 - [ ] No secrets, API keys, passwords, or tokens
 - [ ] Every section is strictly necessary — context files with unnecessary content reduce agent task success rates; apply the test "Would removing this cause an agent to make a mistake?" and cut anything that fails
 
@@ -33,7 +33,7 @@ Used by both generation agents (to know what good looks like before writing) and
 ## Verification Commands
 
 ```bash
-wc -l AGENTS.md                                                        # must be < 500
+wc -l AGENTS.md                                                        # must be < 200
 grep -iE "(api_key|password|secret|token|credential)\s*[:=]\s*(\"[^\"]{4,}\"|'[^']{4,}'|[A-Za-z0-9+/_-]{20,})" AGENTS.md  # must be empty
 grep -c "docs.*guidelines" AGENTS.md                                   # must be > 0
 find docs -name "*-guidelines.md" | sort                               # compare against index entries

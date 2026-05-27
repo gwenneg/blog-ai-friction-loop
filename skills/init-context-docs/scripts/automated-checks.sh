@@ -51,7 +51,7 @@ check_secrets() {
 # AGENTS.md
 echo "=== AGENTS.md ==="
 if check_exists "$REPO_ROOT/AGENTS.md"; then
-    check_size "$REPO_ROOT/AGENTS.md" 500
+    check_size "$REPO_ROOT/AGENTS.md" 200
     check_secrets "$REPO_ROOT/AGENTS.md"
     if grep -q "docs.*guidelines" "$REPO_ROOT/AGENTS.md"; then
         echo "✅ AGENTS.md: contains docs index"
